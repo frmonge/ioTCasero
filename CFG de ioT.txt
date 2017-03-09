@@ -1,0 +1,22 @@
+/* Recopilación de datos para crear constantes
+se creara un fichero de configuración, config.cfg
+para todos ellos 
+Nuestro servidor SQL tiene que tener wifi y una dirección IP fija.
+*/
+
+// valores generales
+velSerie=115200; //velocidad de las comunicaciones serie.
+
+
+// Valores del servidor.
+IP1=10; dirección del servidor MySQL
+IP2=16;
+IP3=1;
+IP4=128;
+usuSQL="user";   //usuario de la base SQL.
+claSQL="clave";  //clave del usuario de la base SQL.
+
+
+// Valores por módulo.
+IDSensor=24;  // Numero de sensor (el ID de MySQL)
+IOsql="INSERT INTO test_arduino.hello_sensor (message, sensor_num, value) VALUES ('%s',%d,%s)";
